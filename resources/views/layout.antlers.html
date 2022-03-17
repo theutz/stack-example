@@ -11,6 +11,9 @@
         <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
             {{ template_content }}
         </div>
+        {{ push:example }}
+            <h1>Does this work?</h1>
+        {{ /push:example  }}
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>
